@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - MXSTYLO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>MXSTYLO</h1>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="coleccion.html">Colección</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="cart-icon"><a href="#">Carrito (0)</a></div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>COLECCIÓN DE TEMPORADA</h2>
+            <p>Estilo para el día a día.</p>
+            <a href="coleccion.html" class="btn">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <section class="benefits-container">
+        <div class="benefit-item">
+            <h3>Envío Gratis</h3>
+            <p>En compras mayores a $899</p>
+        </div>
+        <div class="benefit-item">
+            <h3>Pago Seguro</h3>
+            <p>Tus datos protegidos</p>
+        </div>
+        <div class="benefit-item">
+            <h3>Cambios Fáciles</h3>
+            <p>Hasta 30 días para devolver</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Novedades</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image"><img src="img/camisa chango 1.png" alt="Camisa Chango"></div>
+                <div class="product-info">
+                    <h3>CHANGO</h3>
+                    <p class="price">$299.00</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="img/camisa orange 1.png" alt="Camisa Orange"></div>
+                <div class="product-info">
+                    <h3>A CLOCKWORK ORANGE</h3>
+                    <p class="price">$349.00</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="img/camisa SOAD 1.png" alt="Camisa SOAD"></div>
+                <div class="product-info">
+                    <h3>SOAD</h3>
+                    <p class="price">$399.00</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-newsletter">
+            <h3>Únete nuestro Club</h3>
+            <p>Recibe descuentos exclusivos y entérate de los nuevos lanzamientos.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Tu correo electrónico..." required>
+                <button type="submit">Unirse</button>
+            </form>
+        </div>
+        <hr class="footer-divider">
+        <p class="copyright">&copy; 2026 MXSTYLO. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+/* Registro de la fuente personalizada */
+@font-face {
+    font-family: 'Chomsky';
+    src: url('Chomsky.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    -webkit-text-size-adjust: 100%; /* Evita cambios raros de fuente en iOS */
+}
+
+/* Encabezado fijo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #2a2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-family: 'Chomsky', 'Segoe UI', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+    color: #ffffff;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Banners (Hero) */
+.hero, .hero-sub {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/fondo pag 1.png');
+    height: 60vh;
+}
+
+.hero-sub {
+    background-color: #1a1a1a;
+    height: 35vh;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    color: #121212;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Beneficios */
+.benefits-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #1a1a1a;
+    padding: 30px 5%;
+    text-align: center;
+    gap: 24px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.benefit-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.benefit-item h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.benefit-item p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Estilos de Contenedores y Cuadrículas */
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.container-sub {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Tarjetas de Producto */
+.product-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.product-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    background-color: #ffffff;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.price {
+    font-weight: 600;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* Estilos de bloques de contenido */
+.content-block {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content-block h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.content-block p {
+    color: #aaa;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.content-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border: 1px solid #2a2a2a;
+}
+
+.content-card h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.content-card p {
+    color: #aaa;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Formularios */
+.custom-form {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border: 1px solid #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.form-group input, .form-group textarea {
+    padding: 12px;
+    background-color: #121212;
+    border: 1px solid #2a2a2a;
+    color: #fff;
+    border-radius: 0; /* Desactiva bordes redondeados forzados en iOS */
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: 1px solid #ffffff;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #0d0d0d;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-newsletter {
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+}
+
+.footer-newsletter h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter p {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #fff;
+}
+
+.newsletter-form input:focus {
+    outline: 1px solid #fff;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    color: #121212;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* ==========================================================
+   MEDIA QUERIES (Responsividad para iPads e iPhones)
+   ========================================================== */
+
+/* 💻 Tablets e iPads (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 4%;
+    }
+
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .nav a {
+        margin: 0 10px;
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .container, .container-sub {
+        margin: 40px auto;
+    }
+
+    .product-image img {
+        height: 340px; /* Reducción ligera de la imagen para que quepa mejor en grids de tablet */
+    }
+}
+
+/* 📱 Celulares e iPhones (Pantallas menores a 480px) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        height: 45vh;
+    }
+
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 10px 22px;
+        font-size: 0.8rem;
+    }
+
+    .benefits-container {
+        padding: 25px 20px;
+    }
+
+    .custom-form {
+        padding: 20px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+    
+    .product-image img {
+        height: 360px; /* Tamaño ideal para vista de una sola columna en móviles */
+    }
+}
